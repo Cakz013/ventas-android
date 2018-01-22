@@ -1,0 +1,9 @@
+apply plugin: 'java'
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'de.greenrobot:greendao-generator:2.1.0'
+    compile files('src/main/java/com/android.jar')
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"

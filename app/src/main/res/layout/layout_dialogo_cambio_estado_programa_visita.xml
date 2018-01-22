@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Cliente: "
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvCliente"
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:text="&lt;cliente>"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/tfBuscarClienteVisitar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+    </LinearLayout>
+    
+    
+    
+    
+    
+     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borde5" >
+
+        <ListView
+            android:id="@+id/lvClienteVisitar"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:layout_weight="1"
+            android:divider="#C2E0FF"
+            android:dividerHeight="3px"
+            android:fadeScrollbars="false"
+            android:scrollbarSize="10dp"
+            android:visibility="gone"
+            android:scrollbarThumbVertical="@drawable/custom_scroll_style" >
+        </ListView>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Marca: "
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvArticulo"
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:text="&lt;articulo>"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/tfBuscarArticuloVisitar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borde5" >
+
+        <ListView
+            android:id="@+id/lvArticuloVisitar"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:layout_weight="1"
+            android:divider="#C2E0FF"
+            android:dividerHeight="3px"
+            android:fadeScrollbars="false"
+            android:scrollbarSize="10dp"
+            android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+            android:visibility="gone" >
+
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Fecha de visitas:"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/tvFechaVisita"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:enabled="true"
+            android:text="12-12-24"
+            android:textSize="15dp" />
+        
+
+        <Button
+            android:id="@+id/btReprogramar"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_redondeado"
+            android:text="Reprogramar"
+            
+            android:textSize="15dp" />
+
+    </LinearLayout>
+    
+    
+    
+    
+    
+
+    <LinearLayout
+        android:id="@+id/llayoutMarcarEstadoComo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Marcar como: "
+            android:textSize="15dp" />
+
+        <Spinner
+            android:id="@+id/spEstadoVisitaCliente"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:id="@+id/llvMotivoNoVisita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Motivo:"
+            android:textSize="15dp" />
+
+        <Spinner
+            android:id="@+id/spMotivosVisitaNoExitosa"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llMotivoNoVisitaObservacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Observación:"
+             />
+
+        <EditText
+            android:id="@+id/tfObservacionEstadoVisita"
+            android:layout_width="450dp"
+            android:layout_height="90dp"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+        
+        
+        
+
+    </LinearLayout>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:gravity="center" 
+        >
+<TextView
+            android:id="@+id/textView132"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:text="Campos Obligatorios: Cliente - Marca - Fecha de Visitas - Motivo  "
+            android:textSize="15dp" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:gravity="center" 
+        >
+
+        <TextView
+            android:id="@+id/tvInfoSeleccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:gravity="center" 
+        >
+
+        <TextView
+            android:id="@+id/tvInfoSeleccionArt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    
+    
+
+</LinearLayout>

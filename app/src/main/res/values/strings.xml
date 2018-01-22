@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Aplicacion de Venta</string>
+    <string name="error_m">Error en la aplicacion. Cerrando</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_form_panel_sincronizar_datos">FormPanelSincronizarDatos</string>
+    <string name="title_activity_form_iniciar_toma_pedidos">FormIniciarTomaPedidos</string>
+    <string name="title_activity_frm_iniciar_tpv2">FrmIniciarTPv2</string>
+    <string name="title_activity_form_tomar_pedido_ya">FormTomarPedidoYa</string>
+    <string name="title_activity_form_cargar_referencias">FormCargarReferencias</string>
+    <string name="title_activity_form_articulos_para_agregar">Añadir articulos </string>
+    <string name="title_activity_form_articulos_para_agregar_calzados">Añadir referencias </string>
+
+    <string-array name="descuentos_promedios_no_usar">
+        <item>0%</item>
+        <item>5%</item>
+        <item>10%</item>
+        <item>15%</item>
+        <item>20%</item>
+        <item>25%</item>
+    </string-array>
+    <string-array name="descuentos_promedios">
+        <item>0%</item>
+        <item>5%</item>
+        <item>10%</item>
+        <item>15%</item>
+        <item>20%</item>
+        <item>25%</item>
+    </string-array>
+    <string-array name="quincenames">
+        <item>Mes..</item>
+        <item>Enero</item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Mayo</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+    <string-array name="quincenan">
+        <item>Quinc..</item>
+        <item>1ra</item>
+        <item>2da</item>
+    </string-array>
+    <string-array name="anioentrega">
+        <item>2015</item>
+    </string-array>
+    <string name="title_activity_form_pedidos_frecuentes">PedidosFrecuentes</string>
+    <string name="title_activity_form_cabecera_del_pedido">FormCabeceraDelPedido</string>
+    <string name="title_activity_form_ver_pedidos">FormVerPedidos</string>
+    <string name="title_activity_form_operacion_luego_login">FormOperacionLuegoLogin</string>
+    <string name="title_activity_form_ver_detalles_complero_pedido">FormVerDetallesCompleroPedido</string>
+    <string name="title_activity_form_plan_ventas">FormPlanVentas</string>
+    <string name="title_activity_form_recuperar_pedido">FormRecuperarPedido</string>
+    <string name="title_activity_form_instalar_nueva_version">FormInstalarNuevaVersion</string>
+    <string name="title_activity_form_surtido">FormSurtido</string>
+    <string name="title_activity_form_solcitud_nota_credito">FormSolcitudNotaCredito</string>
+    <string name="title_activity_form_elegir_articulos_nota_credito">FormElegirArticulosNotaCredito</string>
+    <string name="title_activity_form_nota_credito_sel_articulos_factura">FormNotaCreditoSelArticulosFactura</string>
+    <string name="title_activity_form_nuevo_cliente">FormNuevoCliente</string>
+    <string name="title_activity_form_seleccionar_ref_por_catalogo">FormSeleccionarRefPorCatalogo</string>
+    <string name="title_activity_form_opciones_avanzadas">FormOpcionesAvanzadas</string>
+    <string name="title_activity_form_ver_stock_disponible">FormVerStockDisponible</string>
+    <string name="title_activity_form_dialogo_error_aplicacion">FormDialogoErrorAplicacion</string>
+    <string name="title_activity_form_programacion_visitar_clientes">FormProgramacionVisitarClientes</string>
+    <string name="title_activity_form_simple_error_dialog">FormSimpleErrorDialog</string>
+    <string name="title_activity_form_ofertas_titlibra">FormOfertasTitlibra</string>
+    <string name="title_activity_form_consulta_clientes">FormConsultaClientes</string>
+    <string name="title_activity_form_estado_pedidos_ver">FormEstadoPedidosVer</string>
+    <string name="title_activity_form_surtido_v2">FormSurtidoV2</string>
+    <string name="title_activity_form_surtido_tbllayout">FormSurtidoTbllayout</string>
+    <string name="title_activity_form_surtido_extendido">FormSurtidoExtendido</string>
+    <string name="title_activity_form_articulos_para_agregar_calzados_por_imagen_articulo">FormArticulosParaAgregarCalzadosPorImagenArticulo</string>
+    <string name="title_activity_form_ver_stock_articulo_ubicacion">FormVerStockArticuloUbicacion</string>
+
+</resources>

@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.empresa.tpoffline.FormVerStockArticuloUbicacion$PlaceholderFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver stock por  Cajas"
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+        </LinearLayout>
+        
+        <include layout="@layout/linea_separador">
+            
+        </include>"
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Producto:"
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Coleccion:"
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <Spinner
+                android:id="@+id/Spinner01"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+        
+        <include layout="@layout/linea_separador">
+            
+            
+            
+        </include>
+        
+        <LinearLayout
+        android:id="@+id/LlnombresColumnas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D6EBFF"
+        android:orientation="horizontal" >
+          
+           <TextView
+            android:id="@+id/tvArtColLabelColeccion"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Colección" />
+
+           <TextView
+               android:id="@+id/tvBoxNumeasdsadsadro"
+               android:layout_width="60dp"
+               android:layout_height="wrap_content"
+               android:text="Caja" />
+
+           <TextView
+               android:id="@+id/TextViewasd02"
+               android:layout_width="130dp"
+               android:layout_height="wrap_content"
+               android:text="descripcion" />
+          
+        <TextView
+            android:id="@+id/tvMontoTotalasdasd"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="talles" />
+        
+         <TextView
+            android:id="@+id/tvArtParaAnadirColLabelReferencia"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Referencia" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="cantidad" />
+        
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="precio" />
+          
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/lvListaBoxes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/list_item_box_referencias_ubicacion"
+				>
+            </ListView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

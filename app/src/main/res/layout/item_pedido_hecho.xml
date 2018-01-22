@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    
+   
+
+            <TextView
+                android:id="@+id/tvClienteVc"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                
+                android:text="Maria AAAA BBBBB CS" />
+
+            <TextView
+                android:id="@+id/tvMontoVc"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                
+                android:text="90.000.000" />
+
+            <TextView
+                android:id="@+id/tvFechaTomaVc"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                
+                android:text="12-05-2014" />
+
+    <TextView
+        android:id="@+id/tvEmpresaVc"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+
+        android:text="empresa"/>
+
+    <TextView
+        android:id="@+id/tvIdvetancab"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+
+        android:text="15774"/>
+
+          
+            
+            <LinearLayout
+                android:id="@+id/llBotonesverPe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnVerPedido"
+                    android:layout_width="85dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:onClick="accionVerPedido"
+                    android:text="Ver"
+                    android:textSize="15dp"/>
+
+                <Button
+                    android:id="@+id/btnImprimirPedido"
+                    android:layout_width="85dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:text="Impr."
+                    android:textSize="15dp"/>
+
+                <Button
+                    android:id="@+id/btnEnviarPedido"
+                    android:layout_width="85dp"
+                    android:layout_height="40dp"
+                    android:text="Enviado"
+                    android:textSize="15dp"/>
+
+</LinearLayout>
+
+</LinearLayout>

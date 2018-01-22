@@ -1,0 +1,519 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cesar.empresa.FormNuevoCliente$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Cliente nuevo"
+        android:textSize="@dimen/defaultLabelTextSize" />
+
+        <LinearLayout
+            android:id="@+id/llClienteNuevo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical" >
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_marginBottom="5dp"
+                android:background="#99CCFF" >
+
+        </LinearLayout>
+        
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Tipo de cliente:"
+                    android:textSize="@dimen/defaultLabelTextSize" />
+
+                <Spinner
+                    android:id="@+id/spTipoClienteNuevo"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llClienteNormalD1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo de persona: "
+                    android:textSize="@dimen/defaultLabelTextSize" />
+
+                <Spinner
+                    android:id="@+id/spTipoPersona"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                     />
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="184dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo de doc.:"
+                    android:textSize="@dimen/defaultLabelTextSize" />
+
+                <Spinner
+                    android:id="@+id/spTipoDocumento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/llClienteNormalD2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Nro Doc/RUC: "
+                    android:textSize="@dimen/defaultLabelTextSize" />
+
+                <EditText
+                      
+                    android:id="@+id/tfNroDocRucCliente"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:ems="10" >
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nombres/Razón Social"
+                    android:textSize="@dimen/defaultLabelTextSize" />
+
+                <EditText
+                      
+                    android:id="@+id/tfNombreRazonSocialCliente"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10" >
+
+                    
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llClienteNormalD3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Apellidos: "
+                    android:textSize="@dimen/defaultLabelTextSize" />
+
+                <EditText
+                      
+                    android:id="@+id/tfApellidosCliente"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:ems="10" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/llClienteNormalD4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Nombre de Fantasía:"
+                    android:textSize="@dimen/defaultLabelTextSize" />
+
+                <EditText
+                      
+                    android:id="@+id/tfNombreFantasia"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:ems="10" />
+            </LinearLayout>
+
+             <LinearLayout
+                 android:id="@+id/llClienteProspCiudad"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView05"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ciudad:"
+                    android:textSize="@dimen/defaultLabelTextSize" />
+
+                <EditText
+                    android:id="@+id/tfCiudadProspecto"
+                    android:layout_width="420dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:ems="10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView05"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Dirección:"
+                    android:textSize="@dimen/defaultLabelTextSize" />
+
+                <EditText
+                      
+                    android:id="@+id/tfDireccionCliente"
+                    android:layout_width="420dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:ems="10" />
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView05"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Teléfonos:"
+                    android:textSize="@dimen/defaultLabelTextSize" />
+
+                <EditText
+                      
+                    android:id="@+id/tfTelefonosCliente"
+                    android:layout_width="244dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                
+                  <TextView
+                      android:id="@+id/TextView05"
+                      android:layout_width="65dp"
+                      android:layout_height="wrap_content"
+                      android:text="Cel.: "
+                      android:textSize="@dimen/defaultLabelTextSize" />
+                  
+                   <EditText
+                         
+                       android:id="@+id/tfCelularCliente"
+                       android:layout_width="244dp"
+                       android:layout_height="wrap_content"
+                       android:ems="10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llClienteNormalD5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView06"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Region: "
+                    android:textSize="@dimen/defaultLabelTextSize" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <Spinner
+                            android:id="@+id/spRegion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/tvRegionClienteSelecta"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textSize="@dimen/defaultLabelTextSize" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/llClienteNormalD6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView06"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Localidad: "
+                    android:textSize="@dimen/defaultLabelTextSize" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <Spinner
+                            android:id="@+id/spLocalidades"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/tvLocalidadClienteSelecta"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textSize="@dimen/defaultLabelTextSize" />
+
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/lvLocalidadCliente"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:visibility="gone" >
+
+                    </ListView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/llClienteNormalD7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView06"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Barrio:"
+                    android:textSize="@dimen/defaultLabelTextSize" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <Spinner
+                            android:id="@+id/spBarrios"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/tvBarrioClienteSelecto"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textSize="@dimen/defaultLabelTextSize" />
+
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/lvBarrioCliente"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:visibility="gone" >
+
+                    </ListView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/llClienteNormalD8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView08"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Email: "
+                    android:textSize="@dimen/defaultLabelTextSize" />
+
+                <EditText
+                      
+                    android:id="@+id/tfEmailCliente"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textEmailAddress" />
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/llClienteNormalD9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView09"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Zona:"
+                    android:textSize="@dimen/defaultLabelTextSize" />
+
+                <Spinner
+                    android:id="@+id/spZonaCliente"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView06"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rubro: "
+                    android:textSize="@dimen/defaultLabelTextSize" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <Spinner
+                            android:id="@+id/spRubro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/tvRubroClienteSelecto"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textSize="@dimen/defaultLabelTextSize" />
+
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/lvRubroCliente"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:visibility="gone" >
+
+                    </ListView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" >
+
+                 <TextView
+                     android:id="@+id/TextView09"
+                     android:layout_width="200dp"
+                     android:layout_height="wrap_content"
+                     android:text="Obs./Referencia: "
+                     android:textSize="@dimen/defaultLabelTextSize" />
+
+                 <EditText
+                       
+                     android:id="@+id/tfObservacionCliente"
+                     android:layout_width="350dp"
+                     android:layout_height="66dp"
+                     android:ems="10" />
+             </LinearLayout>
+            
+              <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/btnGuardarClienteNuevo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:onClick="accionGuardarClienteNuevo"
+                    android:text="Guardar" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:onClick="accionCancelarNuevoCliente"
+                    android:text="Cancelar" />
+
+            </LinearLayout>
+             
+        </LinearLayout>
+
+</RelativeLayout>

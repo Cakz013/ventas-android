@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cesar.empresa">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <permission
+        android:name="android.permission.INTERACT_ACROSS_USERS"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="android.permission.INTERACT_ACROSS_USERS_FULL"
+        android:protectionLevel="signature" />
+    /*
+    *Aqui se definen cada activity y fragment que posee la apk
+    */
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.cesar.empresa.login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.cesar.empresa.FormOperacionLuegoLogin"
+            android:label="@string/title_activity_form_operacion_luego_login">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.cesar.empresa.FormVerPedidos"
+            android:label="@string/title_activity_form_ver_pedidos">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tpoffline.FormIniciarTomaPedidos"
+            android:label="@string/title_activity_form_iniciar_toma_pedidos">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tpoffline.FormCargarReferencias"
+            android:label="@string/title_activity_form_cargar_referencias">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.cesar.empresa.FormVerStockDisponible"
+            android:label="@string/title_activity_form_ver_stock_disponible">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.cesar.empresa.FormConsultaClientes"
+            android:label="@string/title_activity_form_consulta_clientes">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.cesar.empresa.FormVerDetallesCompletoPedido"
+            android:label="@string/title_activity_form_ver_detalles_complero_pedido">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tpoffline.FormArticulosParaAgregarCalzados"
+            android:label="@string/title_activity_form_articulos_para_agregar_calzados">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tpoffline.FormArticulosParaAgregarCalzadosPorImagenArticulo"
+            android:label="@string/title_activity_form_articulos_para_agregar_calzados_por_imagen_articulo">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tpoffline.FormArticulosParaAgregarClasico"
+            android:label="@string/title_activity_form_articulos_para_agregar">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tpoffline.FormCabeceraDelPedido"
+            android:label="@string/title_activity_form_cabecera_del_pedido">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tpoffline.FormOpcionesAvanzadas"
+            android:label="@string/title_activity_form_opciones_avanzadas">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tpoffline.FormPlanVentas"
+            android:label="@string/title_activity_form_plan_ventas">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.cesar.empresa.FormPedidosFrecuentes"
+            android:label="@string/title_activity_form_pedidos_frecuentes">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tpoffline.FormSeleccionarRefPorCatalogo"
+            android:label="@string/title_activity_form_seleccionar_ref_por_catalogo">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tpoffline.FormSurtidoExtendido"
+            android:label="@string/title_activity_form_surtido_extendido">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tpoffline.FormRecuperarPedido"
+            android:label="@string/title_activity_form_recuperar_pedido">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.cesar.empresa.FormNuevoCliente"
+            android:label="@string/title_activity_form_nuevo_cliente">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.cesar.empresa.FormEstadoPedidosVer"
+            android:label="@string/title_activity_form_estado_pedidos_ver">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tpoffline.FormInstalarNuevaVersion"
+            android:label="@string/title_activity_form_instalar_nueva_version">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.example.cesar.empresa.ServicioTrackingV2"></service>
+    </application>
+
+</manifest>

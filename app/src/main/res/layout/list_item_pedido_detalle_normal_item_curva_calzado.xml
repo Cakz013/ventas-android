@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tvCalRerefencia"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:text="referenciaX" />
+
+  <LinearLayout
+      android:id="@+id/llayInfoCurvaCajaSelecta"
+      android:layout_width="260dp"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="10dp"
+      android:background="@drawable/borde_recuado_curva"
+      android:orientation="vertical" >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" >
+
+          <TextView
+              android:id="@+id/tvCajaTalles"
+              android:layout_width="60dp"
+              android:layout_height="wrap_content"
+              android:text="talles" />
+
+          <LinearLayout
+              android:orientation="horizontal"
+              android:id="@+id/llCurvaTallesSelectos"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+          </LinearLayout>
+
+      </LinearLayout>
+               
+               <include layout="@layout/linea_separador" ></include>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" >
+
+                   <TextView
+                       android:id="@+id/tvCajaTallesdsafasf"
+                       android:layout_width="60dp"
+                       android:layout_height="wrap_content"
+                       android:text="cantidad" />
+
+                   <LinearLayout
+                       android:orientation="horizontal"
+                       android:id="@+id/llCurvaCantidadesSelectos"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" >
+                   </LinearLayout>
+
+               </LinearLayout>
+"
+
+               
+
+           </LinearLayout>
+        
+        <TextView
+            android:id="@+id/tvCalCantPares"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="x-pares" />
+        
+         <TextView
+            android:id="@+id/tvCalColoresCajaSurtido"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:gravity=""
+            android:text="x-color.." />
+
+        <TextView
+            android:id="@+id/tvCalArtSelPrecioUnitarioA"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="15.000" />
+        
+          <TextView
+              android:id="@+id/tvArtCalSelPrecioUnitarioConDescuento"
+              android:layout_width="100dp"
+              android:layout_height="match_parent"
+              android:text="13.200" />
+          
+           <TextView
+               android:id="@+id/tvArtCalSelSubtotal"
+               android:layout_width="100dp"
+               android:layout_height="match_parent"
+               android:text="120.000" />
+
+    <ImageButton
+        android:id="@+id/btnBorrarArticulo"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:contentDescription="vals"
+        
+        android:src="@android:drawable/ic_menu_delete" />
+    
+    <ImageButton
+        android:id="@+id/btnEditArticulo"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:contentDescription="vals"
+        
+        android:src="@android:drawable/ic_input_get" />
+    
+</LinearLayout>

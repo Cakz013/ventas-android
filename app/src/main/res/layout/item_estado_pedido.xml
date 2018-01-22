@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="7dp"
+    android:orientation="horizontal" >
+    
+     <TextView
+        android:id="@+id/tvEstadoPedidoIdpedido"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="112045" />
+
+    <TextView
+        android:id="@+id/tvEstadoPedidoCliente"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="MARIA LARA NOVEDADES  S2" />
+    
+     <TextView
+        android:id="@+id/tvEstadoPedidoProducto"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="BRANDILI" />
+     
+      <TextView
+        android:id="@+id/tvEstadoPedidoColeccion"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="INVIERNO 2015" />
+     
+       <TextView
+           android:id="@+id/tvEstadoPedidoFechaEntrega"
+           android:layout_width="85dp"
+           android:layout_height="wrap_content"
+           android:paddingLeft="3dp"
+           android:paddingRight="3dp"
+           android:text="2014-06-06" />
+       
+         <TextView
+        android:id="@+id/tvEstadoPedidoFechaOperacion"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+          android:paddingLeft="3dp"
+           android:paddingRight="3dp"
+        android:text="2014-05-01" />
+     
+
+    <ImageButton
+        android:id="@+id/tvEstadoPedidoPendienteCreditos"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight=".11"
+        android:padding="10dp"
+        android:text="Oper. Pend." />
+
+    <ImageButton
+        android:id="@+id/tvEstadoPedidoPendienteImportaciones"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight=".11"
+        android:padding="10dp"
+        android:text="Cobr. Confirmado" />
+    
+    <ImageButton
+        android:id="@+id/tvEstadoPedido_PedidoEnDeposito"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight=".11"
+        android:padding="10dp" />
+     
+      <ImageButton
+          android:id="@+id/tvEstadoPedidoFacturado"
+          android:layout_width="40dp"
+          android:layout_height="30dp"
+          android:layout_marginLeft="5dp"
+          android:layout_weight=".11"
+          android:padding="10dp" />
+
+</LinearLayout>

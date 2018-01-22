@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.empresa.tpoffline.FormOpcionesAvanzadas$PlaceholderFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descargar datos de :"
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <Spinner
+                android:id="@+id/spListaTablasActualizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="accionDescargar"
+                android:text="Descargar" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/llayoutSeparadoSobreDatosProduccion"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#99CCFF"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:onClick="actualizarRapidoProducto"
+                android:text="Actualizar rapido (General)" />
+
+            <TextView
+                android:id="@+id/tvFechaVisita"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Actualiza datos de: cliente, referencias y colecciones"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/Button01"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:onClick="actualizarMasRapidoProducto"
+                android:text="Actualizar rapido (solo Referencias)" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Más rápido. Descarga solo referencias y colecciones"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/llayoutSeparadoSobreDatosProduccion"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#99CCFF"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:onClick="accionConfigurarPantallaRotacion"
+                android:text="Configurar rotación de pantalla" />
+            
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Opciones Avanzadas"
+        android:textSize="@dimen/defaultLabelTextSize" />
+
+</RelativeLayout>

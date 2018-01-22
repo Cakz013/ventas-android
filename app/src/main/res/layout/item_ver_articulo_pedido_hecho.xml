@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+   <TextView
+       android:id="@+id/tvVerPedRef"
+       android:layout_width="90dp"
+       android:layout_height="match_parent"
+       android:text="referenciaX" />
+   
+    <TextView
+        android:id="@+id/tvVerPedArtDesc"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="descripcion D" />
+
+        <TextView
+            android:id="@+id/tvVerPedArtTalle"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:text="XG" />
+
+        <TextView
+            android:id="@+id/tvVerPedArtColor"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="15333-ROJO" />
+        
+        <TextView
+            android:id="@+id/tvVerPedArtCantFisico"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:text="5" />
+        
+           <TextView
+               android:id="@+id/tvVerPedArtCantVirtual"
+               android:layout_width="50dp"
+               android:layout_height="match_parent"
+               android:paddingLeft="15dp"
+               android:text="300" />
+           
+            <TextView
+                android:id="@+id/tvVerPedArtCantTotal"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:text="305" />
+
+        <TextView
+            android:id="@+id/tvVerPedArtPrecioUnitario"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="15.000" />
+        
+          <TextView
+              android:id="@+id/tvVerPedArtPrecioUnitarioConDescuento"
+              android:layout_width="90dp"
+              android:layout_height="match_parent"
+              android:text="6000550" />
+          
+           <TextView
+               android:id="@+id/tvVerPedArtSubtotal"
+               android:layout_width="90dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:text="120.000" />
+           
+            <TextView
+                android:id="@+id/tvVerPedArtIVA"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="IVA" />
+    
+</LinearLayout>

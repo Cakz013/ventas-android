@@ -1,0 +1,402 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.empresa.tpoffline.FormSolcitudNotaCredito$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Solicitud de Nota de Crédito"
+        android:textSize="@dimen/defaultLabelTextSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnEnviarSolicitudNotaCredito"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="accionGuardarEnviarSolicitudNotaCredito"
+                android:text="Enviar" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLlineaDiv"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginBottom="8dp"
+            android:background="#99CCFF"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Factura: "
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/tfFactEstab"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="@dimen/inputTextSize" >
+
+                    <requestFocus />
+                </EditText>
+
+                <EditText
+                    android:id="@+id/tfFactPuntoExp"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="@dimen/inputTextSize" />
+
+                <EditText
+                    android:id="@+id/tfFactNro"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="@dimen/inputTextSize" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnBuscarFactura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="accionBuscarFacturaNumero"
+                android:text="Buscar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" >
+
+            <TextView
+                android:id="@+id/TextView09"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Cliente: "
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <TextView
+                android:id="@+id/tvClienteNc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" - "
+                android:textSize="@dimen/defaultLabelTextSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Importe:"
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <TextView
+                android:id="@+id/tvImporteFactNc"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="- - - -  Gs"
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Saldo: "
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <TextView
+                android:id="@+id/tvSaldoFactNc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- - - -  Gs"
+                android:textSize="@dimen/defaultLabelTextSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" >
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Producto: "
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <TextView
+                android:id="@+id/tvProductoNc"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text=" - "
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <TextView
+                android:id="@+id/TextView07"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Colección:"
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <TextView
+                android:id="@+id/tvColeccionNc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  - "
+                android:textSize="@dimen/defaultLabelTextSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout02"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#99CCFF"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" >
+
+            <TextView
+                android:id="@+id/TextView11"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Concepto: "
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rbConceptoDevol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:onClick="accionConceptoSelecto"
+                    android:text="Devolución" />
+
+                <CheckBox
+                    android:id="@+id/cbDevolucionTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="accionConceptoTotalSelecto"
+                    android:text="Total" />
+
+                <RadioButton
+                    android:id="@+id/rbConceptoDescConcedido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="accionConceptoSelecto"
+                    android:text="Descuento concedido" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyMotivosDev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvFechaVisita"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Motivo: "
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <Spinner
+                android:id="@+id/spListaTipoDevoluciones"
+                android:layout_width="332dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        
+         <LinearLayout
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvFechaVisita"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Observación: "
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <EditText
+                android:id="@+id/tfObservacionSolicitudNotaCredito"
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                
+                android:ems="10" />
+           
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp" >
+
+            <TextView
+                android:id="@+id/TextView12"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Importe: "
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <EditText
+                android:id="@+id/tfImporteDescuentoConcedido"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/tvMontoTotalArticulosDevueltos"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text=" - "
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <Button
+                android:id="@+id/btnElegirArticulos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="accionAbrirListaArticulosFactura"
+                android:text="Elegir Articulos" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#99CCFF"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D6EBFF" >
+
+            <TextView
+                android:id="@+id/tvArtSelRefCol"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.91"
+                android:text="Referencia" />
+
+            <TextView
+                android:id="@+id/tvArtSelDescCol"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.94"
+                android:text="Descripcion" />
+
+            <TextView
+                android:id="@+id/tvArtSelTalleCol"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight=".5"
+                android:text="Talle" />
+
+            <TextView
+                android:id="@+id/tvArtSelColorCol"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.99"
+                android:text="Color" />
+
+            <TextView
+                android:id="@+id/tvArtSelCantCol"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".7"
+                android:paddingLeft="15dp"
+                android:text="Cant." />
+
+            <TextView
+                android:id="@+id/tvArtSelPrecioUnitarioACol"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.68"
+                android:text="Importe" />
+
+            <TextView
+                android:id="@+id/tvArtSelAccionCol"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.53"
+                android:text="Accion" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/lvListaArticulosSelectosFactura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_nc_articulo_devolver_selecto" >
+
+            </ListView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

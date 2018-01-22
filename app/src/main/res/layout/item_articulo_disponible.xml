@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="top" 
+    >
+
+      <TextView
+            android:id="@+id/tvArtGrupoLineaArticulo"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            
+            android:text="Grupo LINEA ART" />
+     
+     
+      <TextView
+            android:id="@+id/tvArtLinea"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            
+            android:text="LINEA ART" />
+      
+       <TextView
+        android:id="@+id/tvArtColeccion"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:text="Coleccion" />
+      
+    <TextView
+        android:id="@+id/tvArtDescripcion"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:text="Remera Depor-" />
+    
+    <TextView
+        android:id="@+id/tvArtReferencia"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:text="R101012" />
+
+        <TextView
+            android:id="@+id/tvArtTalleA"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            
+            android:text="XG" />
+
+        <TextView
+            android:id="@+id/tvArtColorA"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            
+            android:text="15333-ROJO" />
+        
+        
+        
+          <TextView
+              android:id="@+id/tvArtCategoria"
+              android:layout_width="30dp"
+              android:layout_height="match_parent"
+              android:text="D" />
+           
+          
+
+        <TextView
+            android:id="@+id/tvArtPrecioUnitarioA"
+            android:layout_width="118dp"
+            android:layout_height="match_parent"
+            
+            android:text="15.000" />
+        
+         <TextView
+               android:id="@+id/tvArtMaximoDesc"
+               android:layout_width="40dp"
+               android:layout_height="match_parent"
+               android:text="37" />
+        
+         <TextView
+               android:id="@+id/tvArtDispStockSaldoVentaDisponib"
+               android:layout_width="60dp"
+               android:layout_height="match_parent"
+               android:text="550" />
+
+        <EditText
+            android:id="@+id/tfCantidadSeleccionarStockRealFisico"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:inputType="number" />
+          <TextView
+            android:id="@+id/tvArtMaximoStockFisico"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            
+            
+            android:text="100" />
+
+         <EditText
+             android:id="@+id/tfCantidadSeleccionarStockEmbarquePendiente"
+             android:layout_width="65dp"
+             android:layout_height="match_parent"
+             android:inputType="number" />
+           <TextView
+            android:id="@+id/tvArtMaximoStockEmbarquePendiente"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            
+            android:text="450" />
+         
+           <TextView
+               android:id="@+id/tvArtTotalFisicoVirtualSelecionado"
+               android:layout_width="50dp"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="15dp"
+               android:text="\n0" />
+
+</LinearLayout>

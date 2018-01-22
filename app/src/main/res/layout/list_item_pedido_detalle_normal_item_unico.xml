@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+   <TextView
+        android:id="@+id/tvArtSelRef"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="referenciaX" />
+   
+    <TextView
+        android:id="@+id/tvArtSelDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="descripcion D" />
+
+        <TextView
+            android:id="@+id/tvArtSelTalle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight=".5"
+            android:text="XG" />
+
+        <TextView
+            android:id="@+id/tvArtSelColor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="15333-ROJO" />
+        
+            <TextView
+                android:id="@+id/tvArtSelCategoria"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:text="D" />
+        
+        <TextView
+            android:id="@+id/tvArtSelCant"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            android:paddingLeft="15dp"
+            android:text="5" />
+
+        <TextView
+            android:id="@+id/tvArtSelPrecioUnitarioA"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="15.000" />
+        
+          <TextView
+              android:id="@+id/tvArtSelPrecioUnitarioConDescuento"
+              android:layout_width="100dp"
+              android:layout_height="match_parent"
+              android:text="13.200" />
+          
+           <TextView
+               android:id="@+id/tvArtSelSubtotal"
+               android:layout_width="100dp"
+               android:layout_height="match_parent"
+               android:text="120.000" />
+
+    <ImageButton
+        android:id="@+id/btnBorrarArticulo"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:contentDescription="vals"
+        
+        android:src="@android:drawable/ic_menu_delete" />
+    
+    <ImageButton
+        android:id="@+id/btnEditArticulo"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:contentDescription="vals"
+        
+        android:src="@android:drawable/ic_input_get" />
+    
+</LinearLayout>

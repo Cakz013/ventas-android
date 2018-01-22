@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+android {
+    /*
+    mediante el uso del gradle podemos utilizar librerias para habilitar la apk
+     */
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+    defaultConfig {
+        multiDexEnabled true
+        applicationId "com.example.cesar.empresa"
+        minSdkVersion 17
+        targetSdkVersion 22
+        jackOptions {
+            enabled true
+        }
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/activation.jar')
+    compile files('libs/mail.jar')
+    compile files('libs/additionnal.jar')
+    compile files('libs/StarIOPort3.1.jar')
+    compile files('libs/commons-net-3.3.jar')
+    compile files('libs/ftp4j-1.6.jar')
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'javax.mail:mail:1.4.7'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.google.android.gms:play-services:6.5.87'
+    compile 'com.squareup.okhttp3:okhttp:3.5.0'
+    compile 'de.greenrobot:greendao:2.1.0'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+}

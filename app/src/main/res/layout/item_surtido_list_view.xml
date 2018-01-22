@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal" >
+    
+      <TextView
+                     android:id="@+id/tvItemSurtidoColor"
+                     android:layout_width="55dp"
+                     android:layout_height="wrap_content"
+                     android:text="Color"
+                     android:textSize="@dimen/defaultLabelTextSize" />
+      
+
+                    <TextView
+                     android:id="@+id/tvItemSurtidoTalle1"
+                     android:layout_width="70dp"
+                     android:layout_height="wrap_content"
+                     android:paddingLeft="10dp"
+                     android:text="T1"
+                     android:textSize="@dimen/defaultLabelTextSize" />
+
+                 <TextView
+                     android:id="@+id/tvItemSurtidoTalle2"
+                     android:layout_width="70dp"
+                     android:layout_height="wrap_content"
+                     android:paddingLeft="10dp"
+                     android:text="T2"
+                     android:textSize="@dimen/defaultLabelTextSize" />
+
+                 <TextView
+                     android:id="@+id/tvItemSurtidoTalle3"
+                     android:layout_width="70dp"
+                     android:layout_height="wrap_content"
+                     android:paddingLeft="10dp"
+                     android:text="T3"
+                     android:textSize="@dimen/defaultLabelTextSize" />
+
+                 <TextView
+                     android:id="@+id/tvItemSurtidoTalle4"
+                     android:layout_width="70dp"
+                     android:layout_height="wrap_content"
+                     android:paddingLeft="10dp"
+                     android:text="T4"
+                     android:textSize="@dimen/defaultLabelTextSize" />
+
+                 <TextView
+                     android:id="@+id/tvItemSurtidoTalle5"
+                     android:layout_width="70dp"
+                     android:layout_height="wrap_content"
+                     android:paddingLeft="10dp"
+                     android:text="T5"
+                     android:textSize="@dimen/defaultLabelTextSize" />
+
+                 <TextView
+                     android:id="@+id/tvItemSurtidoTalle6"
+                     android:layout_width="70dp"
+                     android:layout_height="wrap_content"
+                     android:paddingLeft="10dp"
+                     android:text="T6"
+                     android:textSize="@dimen/defaultLabelTextSize" />
+
+                 <TextView
+                     android:id="@+id/tvItemSurtidoTalle7"
+                     android:layout_width="70dp"
+                     android:layout_height="wrap_content"
+                     android:paddingLeft="10dp"
+                     android:text="T7"
+                     android:textSize="@dimen/defaultLabelTextSize" />
+
+                 <TextView
+                     android:id="@+id/tvItemSurtidoTalle8"
+                     android:layout_width="70dp"
+                     android:layout_height="wrap_content"
+                     android:paddingLeft="10dp"
+                     android:text="T8"
+                     android:textSize="@dimen/defaultLabelTextSize" />
+
+                 <TextView
+                     android:id="@+id/tvItemSurtidoTalle9"
+                     android:layout_width="70dp"
+                     android:layout_height="wrap_content"
+                     android:paddingLeft="10dp"
+                     android:text="T9"
+                     android:textSize="@dimen/defaultLabelTextSize" />
+
+                 <TextView
+                     android:id="@+id/tvItemSurtidoTalle10"
+                     android:layout_width="70dp"
+                     android:layout_height="wrap_content"
+                     android:paddingLeft="10dp"
+                     android:text="T10"
+                     android:textSize="@dimen/defaultLabelTextSize" />
+
+                 <TextView
+                     android:id="@+id/tvItemSurtidoTalle11"
+                     android:layout_width="70dp"
+                     android:layout_height="wrap_content"
+                     android:paddingLeft="10dp"
+                     android:text="T11"
+                     android:textSize="@dimen/defaultLabelTextSize" />
+
+                 <TextView
+                     android:id="@+id/tvItemSurtidoTalle12"
+                     android:layout_width="70dp"
+                     android:layout_height="wrap_content"
+                     android:paddingLeft="10dp"
+                     android:text="T12"
+                     android:textSize="@dimen/defaultLabelTextSize" />
+
+                 <TextView
+                     android:id="@+id/tvItemSurtidoTalle13"
+                     android:layout_width="70dp"
+                     android:layout_height="wrap_content"
+                     android:paddingLeft="10dp"
+                     android:text="T13"
+                     android:textSize="@dimen/defaultLabelTextSize" />
+
+                 <TextView
+                     android:id="@+id/tvItemSurtidoTalle14"
+                     android:layout_width="70dp"
+                     android:layout_height="wrap_content"
+                     android:paddingLeft="10dp"
+                     android:text="T14"
+                     android:textSize="@dimen/defaultLabelTextSize" />
+
+</LinearLayout>

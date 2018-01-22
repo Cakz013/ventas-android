@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cesar.empresa.FormEstadoPedidosVer$PlaceholderFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvTituloEstadoPedidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Estado de los ultimos # pedidos"
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:onClick="accionActualizarEstadoPedido"
+                android:text="Actualizar" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:onClick="accionBuscarItem"
+                android:text="Buscar: " />
+
+            <EditText
+                android:id="@+id/tfBuscarPedido"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde3" >
+
+            <TextView
+                android:id="@+id/tvArtSelRefCol"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="Nro. Ped." />
+
+            <TextView
+                android:id="@+id/tvArtSelDescCol"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Cliente" />
+            
+             <TextView
+                android:id="@+id/tvArtSelRefCol"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="Marca" />
+             <TextView
+                android:id="@+id/tvArtSelRefCol"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="Colección" />
+             
+               <TextView
+                android:id="@+id/tvArtSelRefCol"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:text="Entrega" />
+                <TextView
+                android:id="@+id/tvArtSelRefCol"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:text="Fecha Op." />
+
+            <TextView
+                android:id="@+id/tvArtSelTalleCol"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".11"
+                android:paddingLeft="20dp"
+                android:text="Pend. de creditos" />
+
+            <TextView
+                android:id="@+id/tvArtSelTalleCol"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight=".11"
+                android:paddingLeft="15dp"
+                android:text="Pendiente de Import." />
+
+            <TextView
+                android:id="@+id/tvArtSelTalleCol"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight=".11"
+                android:paddingLeft="8dp"
+                android:text="Pedido en depósito" />
+
+            <TextView
+                android:id="@+id/tvArtSelTalleCol"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".11"
+                android:paddingLeft="30dp"
+                android:text="Facturado" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/LLListaPedidosHechosv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/lvListaEstadoPedido"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="#C2E0FF"
+                    android:dividerHeight="2px"
+                    android:fadeScrollbars="false"
+                    tools:listitem="@layout/item_estado_pedido"></ListView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

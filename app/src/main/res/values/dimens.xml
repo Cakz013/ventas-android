@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="inputTextSize">20dp</dimen>
+    <dimen name="defaultLabelTextSize">20dp</dimen>
+    <dimen name="defaultBouttonTextSize">20dp</dimen>
+    <dimen name="tableColumHeadLabel">15dp</dimen>
+   
+
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tvFactArticuloRef"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="referenciaX" />
+
+    <TextView
+        android:id="@+id/tvFactArticuloCodBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="cod barra" />
+
+    <TextView
+        android:id="@+id/tvFactArticuloDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="descripcion D" />
+
+    <TextView
+        android:id="@+id/tvFactArticuloTalle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_weight=".5"
+        android:text="XG" />
+
+    <TextView
+        android:id="@+id/tvFactArticuloColor"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="15333-ROJO" />
+
+    <TextView
+        android:id="@+id/tvFactArticuloCant"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".7"
+        android:paddingLeft="15dp"
+        android:text="5" />
+
+    <TextView
+        android:id="@+id/tvFactArticuloPrecioTotal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="15.000" />
+
+    <EditText
+        android:id="@+id/tfArticuloFacturaCantidadDevolver"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+</LinearLayout>

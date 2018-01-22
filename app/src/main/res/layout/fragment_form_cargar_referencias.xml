@@ -1,0 +1,867 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="tpoffline.FormCargarReferencias$PlaceholderFragment" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTituloCargarRef"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Producto, Col.."
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvCargarReferenciasCalidadVenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="20dp"
+                android:text="CV: 4"
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <TextView
+                android:id="@+id/tvCargarReferenciasPromedioColeccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="PC: -"
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <TextView
+                android:id="@+id/tvCargarReferenciasPromedioPrecios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="PP: -"
+                android:textSize="@dimen/defaultLabelTextSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp">
+
+            <Button
+                android:id="@+id/btResumido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.40"
+                android:onClick="accionDatosCabecera"
+                android:text="Datos de Cabecera" />
+
+            <Button
+                android:id="@+id/btDetallado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.71"
+                android:onClick="accionGuardarPedido"
+                android:text="Guardar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="5dp"
+            android:background="#99CCFF"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTotalArticulos"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Artículos: 0 "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvClienteSelectoPlanVentas"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Desc.: "
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/spListaDescuentos"
+                android:layout_width="81dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/tfDescRango"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTotalSinDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvDetallesDelPedido"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Entrega: "
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <TextView
+                android:id="@+id/tvFechaEntregaCargar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTotalSinDesc2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvPorcentajeMeta"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="P.: "
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <TextView
+                android:id="@+id/tvPorcentajeTotalMeta"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="0 %"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llTotalSinDesc2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvEtiquetaMetaAnterior"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="M.V.A.: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvMetaVentaAnterior"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="0 Gs."
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvEtiquetaMetaVenta"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="M.V.: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvMontoTotalMeta"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="0 Gs."
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+
+            <TextView
+                android:id="@+id/tvEtiquetaMetaCantidadAnterior"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="M.C.A: "
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+
+            <TextView
+                android:id="@+id/tvMetaCantidad"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/tvEtiquetaMetaCantidad"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="M.C.: "
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+
+            <TextView
+                android:id="@+id/tvMetaCantidadAnterior"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tvEtiquetaPPAnterior"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="P.P.A.: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvPrecioPAnterior"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="0 Gs."
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/tvEtiquetaPP"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="P.P.M.: "
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+
+            <TextView
+                android:id="@+id/tvPrecioP"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="0 Gs."
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/tvEtiquetaPP"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="P.P.P.: "
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+
+            <TextView
+                android:id="@+id/tvPrecioPPrenda"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="0 Gs."
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+
+            <TextView
+                android:id="@+id/tvEtiquetaMixAnterior"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Mix Ant.: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/TvMixAnterior"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/TextView14"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Mix Actual: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/TvMixActual"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/circuloMagico"
+                android:layout_width="88dp"
+                android:layout_height="30dp"
+                android:src="@drawable/rojo" />
+
+            <TextView
+                android:id="@+id/TextView16"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Mix: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvMixMeta"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+
+            <TextView
+                android:id="@+id/tvEtiquetaComisionAnterior"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Com. Ant.: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/TvComisionAnterior"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvEtiquetaComision"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Meta Com.: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvComision"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llayoutSeparadoSobreDatosProduccion"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="5dp"
+            android:background="#99CCFF"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLayoutDatosProduccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvDatosProduccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Datos de producción"
+                android:textSize="@dimen/defaultLabelTextSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llDatosFidelidadPorcetajes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tvTasaPromocionFidelidad"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="Descuento de fidelidad: "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvDescuentoFidelidadActualCalculado"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Máximo:"
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <TextView
+                android:id="@+id/tvDescuentoFidelidadActualMaximo"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <TextView
+                android:id="@+id/tvVerColeccion"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:text="Acumulado: "
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <TextView
+                android:id="@+id/tvDescuentoFidelidadActualAcumulado"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textSize="@dimen/defaultLabelTextSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLlineaDivasadf"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="5dp"
+            android:background="#99CCFF"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llClienteFidelidadPorEjecutar"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/customborder"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tvFechaVisita"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Meta Fidelidad: "
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <TextView
+                android:id="@+id/tvMetaFidelidadUn"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="0 un."
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_right" />
+
+            <TextView
+                android:id="@+id/tvFidelidadPorEjecutarLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:text="Por ejecutar: "
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <TextView
+                android:id="@+id/tvFidelidadPorEjecutarUn"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="0 un."
+                android:textSize="@dimen/defaultLabelTextSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llFidelidadPromocion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Promoción: "
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <TextView
+                android:id="@+id/tvPromocionActualSelecta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3%"
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llDivisorBajoFidelidadCliente"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginBottom="8dp"
+            android:background="#99CCFF"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvReferenciaSeleccione"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Referencias: Selecione para añadir artículos"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnMostrarArticulosDeReferenciaParaAnadir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@android:drawable/ic_input_add"
+                android:onClick="accionMostrarArticulosDeReferenciaParaAnadir"
+                android:text="Añadir" />
+
+            <EditText
+                android:id="@+id/tfReferenciaStrBuscarV2"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:ems="10">
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/btnSeleccionarCatalogo"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:onClick="accionAbrirListadoSeleccionPorCatalogo"
+                android:text="Catálogo.." />
+
+            <Button
+                android:id="@+id/btLoadTestDataArticulos"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:onClick="accionLoadTestDataArticulos"
+                android:text="Load test"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="accionVerStock"
+                android:text="Ver stock.." />
+
+            <Button
+                android:id="@+id/btnVerOfertasTilibra"
+                android:layout_width="64dp"
+                android:layout_height="83dp"
+                android:layout_weight="0.45"
+                android:onClick="cargarOfertasDisponibles"
+                android:text="Ver lanzamientos y ofertas.."
+                android:textSize="@dimen/tableColumHeadLabel" />
+
+            <Button
+                android:id="@+id/btnSaldoVenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="accionVerSaldoArticulosVenta"
+                android:text="Saldo de venta" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lltituloItemsSelectos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D6EBFF"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llTituloColsRefsNormal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#D6EBFF">
+
+                <TextView
+                    android:id="@+id/TextView05"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Referencia" />
+
+                <TextView
+                    android:id="@+id/TextView04"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Descripcion" />
+
+                <TextView
+                    android:id="@+id/TextView08"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight=".5"
+                    android:text="Talle" />
+
+                <TextView
+                    android:id="@+id/TextView06"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Color" />
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:text="Cat." />
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".7"
+                    android:paddingLeft="4dp"
+                    android:text="Cant." />
+
+                <TextView
+                    android:id="@+id/TextView10"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Precio" />
+
+                <TextView
+                    android:id="@+id/TextView11"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Con Desc." />
+
+                <TextView
+                    android:id="@+id/TextView09"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Subtotal" />
+
+                <TextView
+                    android:id="@+id/TextView07"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Acción " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTituloColsRefsCalzado"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#D6EBFF">
+
+                <TextView
+                    android:id="@+id/TextView12"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:text="Referencia" />
+
+                <TextView
+                    android:id="@+id/tvArtSelRefCol"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:text="curva" />
+
+                <TextView
+                    android:id="@+id/tvArtSelCantCol"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="4dp"
+                    android:text="pares" />
+
+                <TextView
+                    android:id="@+id/TextView13"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="4dp"
+                    android:text="color" />
+
+                <TextView
+                    android:id="@+id/tvArtSelPrecioUnitarioACol"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Precio" />
+
+                <TextView
+                    android:id="@+id/tvArtSelPrecioUnitarioConDescuentoCol"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Con Desc." />
+
+                <TextView
+                    android:id="@+id/tvArtSelSubtotalCol"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Subtotal" />
+
+                <TextView
+                    android:id="@+id/tvArtSelAccionCol"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Accion" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLListaReferencias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lvListaReferenciasV2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#C2E0FF"
+                android:dividerHeight="3px"
+                android:fadeScrollbars="false"
+                android:visibility="gone"
+                tools:listitem="@layout/list_item_referencia_calzado"></ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLListaSelectos"
+            android:layout_width="match_parent"
+            android:layout_height="468dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ListView
+                android:id="@+id/lvListaArticulosSelectos"
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:layout_weight="0.23"
+                android:fadeScrollbars="false"
+                android:scrollbarSize="10dp"
+                android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+                tools:listitem="@layout/list_item_pedido_detalle_normal_item_curva_calzado"></ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sin desc.: "
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tvTotalSinDescuento"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="0 Gs."
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/tvFechaEntregaCabecera"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Total desc.: "
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvMontoTotal"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="0 Gs."
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

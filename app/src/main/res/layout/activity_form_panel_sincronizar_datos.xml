@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.empresa.tpoffline.FormPanelSincronizarDatos"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv123131"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Panel de Sincronizacion de Datos"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Actualizar Todo"
+            android:onClick="accionActualizarTodo"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:columnCount="3" >
+
+            <Button
+                android:id="@+id/btnIniciarTomaPedido"
+                android:layout_column="0"
+                android:layout_gravity="left|top"
+                android:layout_row="0"
+                android:text="Productos" />
+
+            <Button
+                android:id="@+id/btDetallado"
+                android:layout_column="2"
+                android:layout_gravity="left|top"
+                android:layout_row="0"
+                android:text="Coleccion" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_column="0"
+                android:layout_gravity="left|top"
+                android:layout_row="2"
+                android:text="Clientes" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_column="2"
+                android:layout_gravity="left|top"
+                android:layout_row="2"
+                android:text="Articulos" />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
+

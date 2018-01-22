@@ -1,0 +1,516 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.empresa.tpoffline.FormCabeceraDelPedido$PlaceholderFragment" >
+
+    <LinearLayout
+        android:id="@+id/LLPrinc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="Cabecera del Pedido"
+            android:textSize="@dimen/defaultLabelTextSize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btAceptarCabecerax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="accionAceptarCabeceraDatos"
+                android:text="Aceptar" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/llayoutSeparadoSobreDatosProduccion"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="5dp"
+            android:background="#99CCFF"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="667dp"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:id="@+id/tvClienteSelectoPlanVentas"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Forma de pago: "
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <Spinner
+                android:id="@+id/spFormaPagoV2"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content" />
+
+<CheckBox
+    android:id="@+id/Flete1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:checked="false"
+    android:shadowDx="1"
+    android:shadowDy="1"
+    android:shadowRadius="2"
+    android:text="Flete"
+    android:onClick="inicializarAccionFlete"
+    android:textColor="#000000"
+    android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.53"
+                android:text="Promocion desc.: "
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <Spinner
+                android:id="@+id/spPromoDesc"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            
+            
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/llayoutSeparadoSobreDatosProduccion"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="5dp"
+            android:background="#99CCFF"
+            android:orientation="horizontal" >
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/tvPlazos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="Plazos: "
+                    android:textSize="@dimen/defaultLabelTextSize" />
+
+                <EditText
+                    android:id="@+id/tfPlazoCampo1v2"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:textSize="@dimen/inputTextSize" />
+
+                <EditText
+                    android:id="@+id/tfPlazoCampo2v2"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:textSize="@dimen/inputTextSize" />
+
+                <EditText
+                    android:id="@+id/tfPlazoCampo3v2"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:textSize="@dimen/inputTextSize" />
+
+                <EditText
+                    android:id="@+id/tfPlazoCampo4v2"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:textSize="@dimen/inputTextSize" />
+                
+                 <EditText
+                     android:id="@+id/tfPlazoCampo5v2"
+                     android:layout_width="62dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:ems="10"
+                     android:focusable="false"
+                     android:imeOptions="actionDone"
+                     android:inputType="number"
+                     android:textSize="@dimen/inputTextSize" />
+                 
+                  <EditText
+                      android:id="@+id/tfPlazoCampo6v2"
+                      android:layout_width="62dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:ems="10"
+                      android:focusable="false"
+                      android:imeOptions="actionDone"
+                      android:inputType="number"
+                      android:textSize="@dimen/inputTextSize" />
+                  
+                   <EditText
+                       android:id="@+id/tfPlazoCampo7v2"
+                       android:layout_width="62dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:ems="10"
+                       android:focusable="false"
+                       android:imeOptions="actionDone"
+                       android:inputType="number"
+                       android:textSize="@dimen/inputTextSize" />
+                   
+                    <EditText
+                        android:id="@+id/tfPlazoCampo8v2"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:textSize="@dimen/inputTextSize" />
+                    
+                     <EditText
+                         android:id="@+id/tfPlazoCampo9v2"
+                         android:layout_width="62dp"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:ems="10"
+                         android:focusable="false"
+                         android:imeOptions="actionDone"
+                         android:inputType="number"
+                         android:textSize="@dimen/inputTextSize" />
+                     
+                      <EditText
+                          android:id="@+id/tfPlazoCampo10v2"
+                          android:layout_width="62dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:ems="10"
+                          android:focusable="false"
+                          android:imeOptions="actionDone"
+                          android:inputType="number"
+                          android:textSize="@dimen/inputTextSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llListaPlazos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Seleccione plazos"
+                    android:textSize="@dimen/defaultLabelTextSize" />
+
+                <Spinner
+                    android:id="@+id/spListaPlazosDisponibles"
+                    android:layout_width="347dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/inputTextSize" />
+
+            </LinearLayout>
+             
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/llayoutSeparadoSobreDatosProduccion"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="5dp"
+            android:background="#99CCFF"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvEntregarEn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="en-"
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Embarque Nro.:"
+                    android:textSize="@dimen/defaultLabelTextSize" />
+
+                <Spinner
+                    android:id="@+id/spEmbarqueNro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llayoutFechaEntregaQuincena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+            
+             <TextView
+                 android:id="@+id/tvFechaEntregaDiaLabel"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="10dp"
+                 android:text="Dia: "
+                 android:textSize="@dimen/defaultLabelTextSize" />
+
+            <Spinner
+                android:id="@+id/spFechaEntregaDias"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/spQuincenaN"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:entries="@array/quincenan" />
+
+            <TextView
+                android:id="@+id/tvFechaVisita"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text=" mes: "
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <Spinner
+                android:id="@+id/spQuincenaMes"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:entries="@array/quincenames" />
+            
+              <TextView
+                  android:id="@+id/textViewaas3"
+                  android:layout_width="45dp"
+                  android:layout_height="wrap_content"
+                  android:text="año: "
+                  android:textSize="@dimen/defaultLabelTextSize" />
+            
+              <Spinner
+                  android:id="@+id/spAnioEntrega"
+                  android:layout_width="80dp"
+                  android:layout_height="wrap_content"
+                   />
+
+              <CheckBox
+                  android:id="@+id/checkEntregaInmediata"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Inmediata" />
+
+              <TextView
+                  android:id="@+id/tvEscalaInfo"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="20dp"
+                  android:text=" (%escala)"
+                  android:textSize="@dimen/defaultLabelTextSize" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/llayoutSeparadoSobreDatosProduccion"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="5dp"
+            android:background="#99CCFF"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/tvFechaColeccionEmbarque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/llayoutSeparadoSobreDatosProduccion"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="5dp"
+            android:background="#99CCFF"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3v2asdas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp" >
+
+            <TextView
+                android:id="@+id/TextView05asdasd"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Observación: "
+                android:textSize="@dimen/defaultLabelTextSize" />
+
+            <EditText
+                android:id="@+id/tfObservacion"
+                android:layout_width="539dp"
+                android:layout_height="143dp"
+                android:layout_weight="1"
+                android:ems="10" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/llayoutSeparadoSobreDatosProduccion"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="5dp"
+            android:background="#99CCFF"
+            android:orientation="horizontal" >
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/LinearLayclienteContendorEntrada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvaedasdas"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cliente:   "
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/tfClienteString2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="@dimen/inputTextSize" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvClienteSelecto"
+                android:layout_width="wrap_content"
+                android:layout_height="73dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="242.65"
+                android:text=" selecione.."
+                android:textSize="20dp" />
+        </LinearLayout>
+
+<LinearLayout
+        android:id="@+id/LinearLayListaClientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/LinearLayclienteContendorEntrada"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/LinearLayclienteContendorEntrada"
+        android:layout_marginTop="21dp" >
+
+        <ListView
+            android:id="@+id/lvListaClientes"
+            android:layout_width="match_parent"
+            android:layout_height="658dp"
+            android:clipToPadding="false"
+            android:fadeScrollbars="false"
+            android:visibility="gone" >
+        </ListView>
+    </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

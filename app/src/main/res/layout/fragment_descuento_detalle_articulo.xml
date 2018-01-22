@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+         <TextView
+             android:id="@+id/textView2"
+             android:layout_width="95dp"
+             android:layout_height="wrap_content"
+             android:text="Cant. Fis."
+             android:textSize="@dimen/defaultLabelTextSize" />
+          <TextView
+             android:id="@+id/textView2"
+             android:layout_width="95dp"
+             android:layout_height="wrap_content"
+             android:text="Cant. Virt."
+             android:textSize="@dimen/defaultLabelTextSize" />
+         
+
+         <TextView
+             android:id="@+id/tvFechaVisita"
+             android:layout_width="150dp"
+             android:layout_height="wrap_content"
+             android:text="Precio"
+             android:textSize="@dimen/defaultLabelTextSize" />
+
+         <TextView
+             android:id="@+id/textView5"
+             android:layout_width="130dp"
+             android:layout_height="wrap_content"
+             android:text="Con Des."
+             android:textSize="@dimen/defaultLabelTextSize" />
+
+         <TextView
+             android:id="@+id/textView6"
+             android:layout_width="130dp"
+             android:layout_height="wrap_content"
+             android:text="Sub total"
+             android:textSize="@dimen/defaultLabelTextSize" />
+
+         <TextView
+             android:id="@+id/tvColLabelDetalleArtEdicion"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Descuento%:"
+             android:textSize="@dimen/defaultLabelTextSize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/tfArticuloDetCantidadFsica"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+        
+        
+        <EditText
+            android:id="@+id/tfArticuloDetCantidadVirtual"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" >
+
+           
+        </EditText>
+
+        <TextView
+            android:id="@+id/tvArticuloDetPrecioUnitario"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="100000"
+            android:textSize="@dimen/defaultLabelTextSize" />
+
+        <TextView
+            android:id="@+id/tvArticuloDetPrecioUnitarioConDesc"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="90000"
+            android:textSize="@dimen/defaultLabelTextSize" />
+
+        <TextView
+            android:id="@+id/tvArticuloDetPrecioSubTotalConDecuento"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="250000"
+            android:textSize="@dimen/defaultLabelTextSize" />
+
+        <Spinner
+            android:id="@+id/spTipoDescuentoAplicar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/tfDescuentoDetalleArticulo"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+   
+
+</LinearLayout>
